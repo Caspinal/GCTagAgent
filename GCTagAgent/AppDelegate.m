@@ -6,6 +6,7 @@
 //
 
 #import "AppDelegate.h"
+#import "CGTagOverlay/GCTagOverlayViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,11 +17,17 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
+    
+    GCTagOverlayViewController *overlay = [[GCTagOverlayViewController alloc] init];
+
+    
 }
 
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
     // Insert code here to tear down your application
+    
+    
 }
 
 

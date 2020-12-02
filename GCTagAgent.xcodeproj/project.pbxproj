@@ -13,6 +13,10 @@
 		BFA11B0B2572C0960081E400 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA11B0A2572C0960081E400 /* main.m */; };
 		BFA11B162572C0960081E400 /* GCTagAgentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA11B152572C0960081E400 /* GCTagAgentTests.m */; };
 		BFA11B212572C0960081E400 /* GCTagAgentUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA11B202572C0960081E400 /* GCTagAgentUITests.m */; };
+		BFA11B332572D20E0081E400 /* GCTagOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA11B322572D20E0081E400 /* GCTagOverlayView.m */; };
+		BFA11B392572D40C0081E400 /* GCTagOverlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA11B382572D40C0081E400 /* GCTagOverlayViewController.m */; };
+		BFA11B492572DEBE0081E400 /* GCTagOverlayWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA11B482572DEBE0081E400 /* GCTagOverlayWindowController.m */; };
+		BFA11B4F2572E1B40081E400 /* GCTagOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA11B4E2572E1B40081E400 /* GCTagOverlay.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,14 @@
 		BFA11B1C2572C0960081E400 /* GCTagAgentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GCTagAgentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFA11B202572C0960081E400 /* GCTagAgentUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCTagAgentUITests.m; sourceTree = "<group>"; };
 		BFA11B222572C0960081E400 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFA11B312572D20E0081E400 /* GCTagOverlayView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCTagOverlayView.h; sourceTree = "<group>"; };
+		BFA11B322572D20E0081E400 /* GCTagOverlayView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCTagOverlayView.m; sourceTree = "<group>"; };
+		BFA11B372572D40C0081E400 /* GCTagOverlayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCTagOverlayViewController.h; sourceTree = "<group>"; };
+		BFA11B382572D40C0081E400 /* GCTagOverlayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCTagOverlayViewController.m; sourceTree = "<group>"; };
+		BFA11B472572DEBE0081E400 /* GCTagOverlayWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCTagOverlayWindowController.h; sourceTree = "<group>"; };
+		BFA11B482572DEBE0081E400 /* GCTagOverlayWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCTagOverlayWindowController.m; sourceTree = "<group>"; };
+		BFA11B4D2572E1B40081E400 /* GCTagOverlay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCTagOverlay.h; sourceTree = "<group>"; };
+		BFA11B4E2572E1B40081E400 /* GCTagOverlay.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCTagOverlay.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +111,7 @@
 			children = (
 				BFA11B012572C0950081E400 /* AppDelegate.h */,
 				BFA11B022572C0950081E400 /* AppDelegate.m */,
+				BFA11B3D2572D4140081E400 /* CGTagOverlay */,
 				BFA11B042572C0960081E400 /* Assets.xcassets */,
 				BFA11B062572C0960081E400 /* MainMenu.xib */,
 				BFA11B092572C0960081E400 /* Info.plist */,
@@ -124,6 +137,21 @@
 				BFA11B222572C0960081E400 /* Info.plist */,
 			);
 			path = GCTagAgentUITests;
+			sourceTree = "<group>";
+		};
+		BFA11B3D2572D4140081E400 /* CGTagOverlay */ = {
+			isa = PBXGroup;
+			children = (
+				BFA11B4D2572E1B40081E400 /* GCTagOverlay.h */,
+				BFA11B4E2572E1B40081E400 /* GCTagOverlay.m */,
+				BFA11B312572D20E0081E400 /* GCTagOverlayView.h */,
+				BFA11B322572D20E0081E400 /* GCTagOverlayView.m */,
+				BFA11B372572D40C0081E400 /* GCTagOverlayViewController.h */,
+				BFA11B382572D40C0081E400 /* GCTagOverlayViewController.m */,
+				BFA11B472572DEBE0081E400 /* GCTagOverlayWindowController.h */,
+				BFA11B482572DEBE0081E400 /* GCTagOverlayWindowController.m */,
+			);
+			path = CGTagOverlay;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,8 +282,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFA11B392572D40C0081E400 /* GCTagOverlayViewController.m in Sources */,
+				BFA11B492572DEBE0081E400 /* GCTagOverlayWindowController.m in Sources */,
+				BFA11B332572D20E0081E400 /* GCTagOverlayView.m in Sources */,
 				BFA11B0B2572C0960081E400 /* main.m in Sources */,
 				BFA11B032572C0950081E400 /* AppDelegate.m in Sources */,
+				BFA11B4F2572E1B40081E400 /* GCTagOverlay.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
